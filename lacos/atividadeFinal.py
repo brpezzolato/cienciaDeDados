@@ -10,7 +10,7 @@ while status == False:
         status = True
         print("\nOperacao finalizada")
 
-    elif preco != 0:
+    elif preco > 0:
         count += 1
         total += preco
 
@@ -23,5 +23,7 @@ while status == False:
         formaPgto = int(input("(1 - Dinheiro / 2 - Cartão): "))
         if formaPgto == 1:
             total = total * 0.95
-        print(f"\nTotal: {total}\nQtd de produtos: {count}\nMedia: {media}\nPagamento: {formaPgto}\n\nOperacao finalizada")
+        print(
+            f"\nTotal: {total}\nQtd de produtos: {count}\nMedia: {media}\nPagamento: {formaPgto}\n\nOperacao finalizada"
+        )
         status = True
