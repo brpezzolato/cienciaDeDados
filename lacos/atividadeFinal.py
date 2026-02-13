@@ -10,13 +10,12 @@ while status == False:
         status = True
         print("\nOperacao finalizada")
 
+    elif preco < 0:
+        print("\nPreco invalido tente novamente")
+
     elif preco > 0:
         count += 1
         total += preco
-
-    elif preco < 0:
-        print("\nPreco invalido digite novamente")
-        preco = float(input("Digite o preco do produto ao finalixar digite (0): "))
 
     else:
         media = total / count
@@ -24,6 +23,6 @@ while status == False:
         if formaPgto == 1:
             total = total * 0.95
         print(
-            f"\nTotal: {total}\nQtd de produtos: {count}\nMedia: {media}\nPagamento: {formaPgto}\n\nOperacao finalizada"
+            f"\nTotal: {total}\nQtd de produtos: {count}\nMedia: {media:.2f}\nPagamento: {formaPgto:.2f}\n\nOperacao finalizada"
         )
         status = True
