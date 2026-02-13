@@ -8,7 +8,7 @@ while status == False:
 
     if count == 0 and preco == 0:
         status = True
-        print("\nOperacao finalizada")
+        print("\nFinalizado")
 
     elif preco < 0:
         print("\nPreco invalido tente novamente")
@@ -23,6 +23,6 @@ while status == False:
         if formaPgto == 1:
             total = total * 0.95
         print(
-            f"\nTotal: {total}\nQtd de produtos: {count}\nMedia: {media:.2f}\nPagamento: {formaPgto:.2f}\n\nOperacao finalizada"
+            f"\nTotal: {total}\nQtd de produtos: {count}\nMedia: {media:.2f}\nPagamento: {formaPgto:.2f}\n\nFinalizado"
         )
         status = True
