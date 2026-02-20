@@ -24,6 +24,7 @@ for i in range(4):
 
     if num > 0:
         saldo_inicial += num
+        num > 500 and print('Valor alto')
         print(f"Saldo parcial: {saldo_inicial}")
 
     elif num < 0:
@@ -32,6 +33,7 @@ for i in range(4):
         else:
             saldo_inicial += num
             print(f"Saldo parcial: {saldo_inicial}")
+            num < -500 and print('Valor alto')
 
 
 print(f"\nO seu saldo final e: {saldo_inicial}")
