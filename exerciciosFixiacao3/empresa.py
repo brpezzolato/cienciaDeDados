@@ -1,11 +1,13 @@
 saldo_inicial = 1000.0
 checkpoint = saldo_inicial
-carac = "!@#$%^&*()"
 
 print(saldo_inicial is checkpoint)
 
+carac = "!@#$%^&*()"
+countVeri = 0
+
 while True:
-    nome = input("\nDigite seu nome: ")
+    nome = input("Digite seu nome: ")
     status = False
 
     for i in carac:
@@ -13,7 +15,7 @@ while True:
             status = True
 
     if status == True:
-        print("\nNome invalido, caracterie especial e proibido\n")
+        print("Nome invalido nao pode caracterie especial")
     else:
         break
 
@@ -22,15 +24,15 @@ for i in range(4):
 
     if num > 0:
         saldo_inicial += num
-        print(f"Saldo parcial: {saldo_inicial}\n")
+        print(f"Saldo parcial: {saldo_inicial}")
 
     elif num < 0:
         if num * -1 > saldo_inicial:
-            print("Saldo insuficiente\n")
+            print("Saldo insuficiente")
         else:
             saldo_inicial += num
-            print(f"Saldo parcial: {saldo_inicial}\n")
+            print(f"Saldo parcial: {saldo_inicial}")
 
 
 print(f"\nO seu saldo final e: {saldo_inicial}")
-print(f"\nE igual a check point ? {saldo_inicial is checkpoint}")
+print(f"E igual a check point: {saldo_inicial is checkpoint}\n")
