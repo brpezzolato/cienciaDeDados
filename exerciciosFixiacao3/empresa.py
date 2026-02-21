@@ -36,5 +36,5 @@ for i in range(4):
             num < -500 and print('Valor alto')
 
 
-print(f"\nO seu saldo final e: {saldo_inicial}")
-print(f"E igual a check point: {saldo_inicial is checkpoint}\n")
+print(f"\no seu saldo final e: {saldo_inicial}")
+print(f"e igual a check point: {saldo_inicial is checkpoint}\n")
