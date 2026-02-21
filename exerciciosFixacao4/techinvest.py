@@ -16,9 +16,9 @@ qntFalta = reserva - (renda - gastoMensal)
 
 if gastoMensal <= renda:
     if qntFalta <= 0:
-        print(f"\nVoce pode ja cobrir 100% da tua reserva de emergencia de R$ {reserva:.2f} (6x o valor do seu gasto por mes) e vai te sobrar ainda R$ {qntFalta * -1:.2f}\n")
+        print(f"\nVoce pode fazer tua reserva de emergencia para 6 meses de gasto (R$ {reserva:.2f}) e vai te sobrar ainda R$ {qntFalta * -1:.2f}\n")
     else:
-        print(f"\nPra sua reserva de R$ {reserva:.2f} (6x o valor do seu gasto por mes) faltam R$  {qntFalta:.2f}\n")
+        print(f"\nPra sua reserva de 6 meses de gasto (R$ {reserva:.2f}) ainda falta R$ {qntFalta:.2f}\n")
 else:
     print("\nEmergencia financeira\n")
 
